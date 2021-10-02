@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+var products =[
+  {
+    img:"https://m.media-amazon.com/images/I/51L3GFbMQHS._AC_SL1500_.jpg",
+    img1:"https://m.media-amazon.com/images/I/61nRuc+DzGS._AC_SL1500_.jpg",
+    img2:"https://m.media-amazon.com/images/I/61W38-j-Y+S._AC_SL1500_.jpg",
+    img3:"https://m.media-amazon.com/images/I/71UYxapgfXS._AC_SL1500_.jpg",
+    desc:"Portable Charger 36800mAh, Power Bank with Tri-Outport & Dual Inport (2.1A USB-C Input and Micro USB Input) External Battery Pack Compatible with iPhone 12/12Pro/11,Galaxy S20 Tablet etc[2021 Version]",
+    price:1120,
+    category:"phone",
+    description: "Portable Charger 36800mAh, Power Bank with Tri-Outport & Dual Inport (2.1A USB-C Input and Micro USB Input) External Battery Pack Compatible with iPhone 12/12Pro/11,Galaxy S20 Tablet etc[2021 Version]
+    36800mAh Ultra-high Capacity: [2021 Version] 36800mAh power bank with ultra-high capacity can charging for iphone 12 /11 above 6 times, Samsung Galaxy S20 above 5 times. Keep Your phone running all day. Without extra worry about low phone battery. Ideal to take it for play game, trip and listen music.
+Power Bank with Tri-Output & Dual Input : With 2.1A 3 USB Output ports , you can charge 3 devices simultaneously. Dual Inport - 2.1A USB C Input, 2.1 A Micro USB Input. power bank can be full charged around 10 hours by usb-c input. [USB C Cable not be included; USB-C Input Only]
+Super Safety - Intelligent Controlling IC: Pxwaxpy Power bank bulit-in Intelliegent Controlling IC can effectly prevent your power bank overcharge, overvoltage, overcurrent and short circuit. you can get more convenient and happy from this high quality power bank.
+Universal Compatibility & Smart LED Indicator: Pxwaxpy USB Portable Charger widely compatible with iphone, Samsung Galaxy, Pixel smartphone and smaller devices such as bluetooth earbuds, fitness tracker, smartwatch ect. Used Smart LED Indicators tracking remaining power left (25%-50%-75%-100%).Input and output status, you need not guessing whether need to charge it or not"
+  },
+    {
+      img:"https://m.media-amazon.com/images/I/71XOSLT4fHL._AC_SL1500_.jpg",
+      img1:"https://m.media-amazon.com/images/I/81oeWOdrofL._AC_SL1500_.jpg",
+      img2:"https://m.media-amazon.com/images/I/210xtrLzEUL._SS400_.jpg",
+      img3:"https://m.media-amazon.com/images/I/81oeWOdrofL._AC_SL1500_.jpg",
+      desc:"Wyze Labs Expandable Storage 32GB MicroSDHC Card Class 10, Black - WYZEMSD32C10",
+      price:1562,
+      category:"phone",
+      description: "Maximize your Wyze Cam’s potential with continuous recording and time-lapse video. Wyze Labs was created with the mission of making high quality, easy-to-use, affordable smart home technology accessible to everyone. We believe big things come in small packages - that’s why we created an affordable, easy-to-use smart home camera that can help you solve life’s mysteries, big and small. So you can be everywhere. And watch everything.
+      Class 10 and UHS-1 (U1)
+Media storage: ~2, 880 minutes (48 hours) of HD video, ~10, 080 minutes (168 hours) of SD video, and ~4, 200 16MP photos based on internal testing results
+Read speed: 90MB/s and write speed: 20MB/s
+Maximizes Wyze Cam functionality with continuous recording and time-lapse video and enables video to continue to record even if Wi-Fi connection is interrupted.
+Compatible with Wyze Cam, Wyze Cam pan, as well as non-Wyze devices for local storage"
+    },
+    
+      {
+        img:"https://m.media-amazon.com/images/I/71ebeKbvufS._AC_SL1500_.jpg",
+        img1:"https://m.media-amazon.com/images/I/61N7CZ4NPMS._AC_SL1500_.jpg",
+        img2:"https://m.media-amazon.com/images/I/71zymmJ4xfS._AC_SL1500_.jpg",
+        img3:"https://m.media-amazon.com/images/I/713JmxT7DpS._AC_SL1500_.jpg",
+        desc:"BLU G50 | 2021 | All Day Battery | Unlocked | 5.5” HD+ Display | 32 GB | 13MP Camera | US Version | | Red",
+        price:9015,
+        category:"phone",
+        description: "Awesome design with a metallic coating that is both sexy and attractive. The G50 is the perfect smartphone to show the world what fabulous design is.5.5” HD+ 18:9 Curved Glass Display
+        13MP Main Camera with LED Flash + 8M Front Selfie Camera
+        32GB Internal Memory 2GB RAM Micro SD up to 64GB; 1.6GHz Octa-Core Processor with IMG 8322 CPU
+        4,000mAh Battery with Type C, Android 10 and Fingerprint Senor
+        4G LTE (1/2/3/4/5/7/12/17/28) 3G: (850/900/1700/1900/2100): US compatibility with GSM Networks including, T-Mobile, Metro PCS, and others. (Not compatible with new AT&T or Cricket activations or with CDMA Networks like Verizon, Sprint, and Boost Mobile)"
+      },
+        {
+          img:"https://m.media-amazon.com/images/I/71ouXIR8m+L._AC_SL1500_.jpg",
+          img1:"https://m.media-amazon.com/images/I/711D-uvZRhL._AC_SL1500_.jpg",
+          img2:"https://m.media-amazon.com/images/I/61wLLPLLJIL._AC_SL1500_.jpg",
+          img3:"https://m.media-amazon.com/images/I/81fgR0nttVL._AC_SL1500_.jpg",
+          desc:"SAMSUNG Galaxy S20 FE 5G Factory Unlocked Android Cell Phone 128GB US Version Smartphone Pro-Grade Camera 30X Space Zoom Night Mode, Cloud Lavender",
+          price:54901,
+          category:"phone",
+          description: "With a Triple pro-grade camera, smooth 120Hz refresh rate display, and an all-day intelligent battery¹ that charges up in minutes, the Samsung Galaxy S20 FE 5G² delivers outstanding innovation. The Triple-lens camera system will not only take bright and high quality images and videos, but can also zoom in from afar, thanks to the 30x Space Zoom. The single take AI mode will let you capture multiple images and videos with just a touch of a button. Shooting at night? No problem. With the help of Night Mode, the Galaxy S20 FE 5G phone can capture crystal-clear images without flash. The Samsung Galaxy S20 FE 5G series is tailor-made for those who want the latest technology without compromise. Choose from a wide range of six colorful hues in a sleek matte finish.¹Battery power consumption depends on usage patterns and results may vary. ²5G speeds vary and require optimal network and connection (factors include frequency, bandwidth, congestion).PRO-GRADE CAMERA: Features high-powered pro lenses for beautiful photographs in any light with 3X optical zoom.
+          30X SPACE ZOOM: Zoom in close from afar or magnify details of something nearby with the power of 30X Space Zoom.
+          NIGHT MODE: Capture crisp images and vibrant videos with Night Mode and capture high-quality content in low light.
+          SINGLE-TAKE AI: One tap of the screen captures multiple images and videos all at once.
+          POWER OF 5G: Get next-level power with Samsung Galaxy 5G: more sharing, more gaming, and more experiences.
+          COLORS TO SUIT YOUR STYLE: Choose from six colorful hues in a sleek matte finish."
+        },
+        {
+          img:"https://m.media-amazon.com/images/I/61E7LOjFlkL._AC_SL1500_.jpg",
+          img1:"https://m.media-amazon.com/images/I/71pykbbj+xL._AC_SL1500_.jpg",
+          img2:"https://m.media-amazon.com/images/I/714vXhcLvPL._AC_SL1500_.jpg",
+          img3:"https://m.media-amazon.com/images/I/714dlzzhtsL._AC_SL1500_.jpg",
+          desc:"YOSUDA Magnetic Rowing Machine 350 LB Weight Capacity - Foldable Rower for Home Use with LCD Monitor, Tablet Holder and Comfortable Seat Cushion",
+          price:27643,
+          category:"cardio",
+          description: "【Minutes Assembly and Save 60% Space】Easy to assemble with only 10 screws in 20 minutes. Two bigger wheels help you to move this rower easily. Stored dimensions when folded: 28.7''L 19.3''W.
+          【Choose YOSUDA】Design and produce top-quality exercise machines for home use for 20 years.YOSUDA has worked with professional European engineers and served more than 1,000,000 families. All our products are full of praise.We promise free return and refund within one month, two years for replacement parts and all messages will get responses within 24 hours.
+          【Super Quiet Rowers】Magnetic resistance system create an unbelievably smooth and nearly silent rowing, YOSUDA rowing exercise machine is very suitable for indoor exercise. It will NEVER disturb the families or roommates and virtually no maintenance requested.
+          【Full-Body Muscle Workout】According to scientific reports,rowing machines engages 90% muscle groups;work legs, core and arms with a smooth, high calorie-burning motion. Perfect for rehabilitative treatment,weight-loss,body-shape,strength training ,etc.
+          【Sufficient Resistance for all Fitness Levels】Our rower machine is equipped with a 10lbs flywheel and 8 level resistance,which provides double resistance levels than the ordinary rowing machine. All stages exerciser can get efficient exercise with different resistance, no matter you are beginner or professionals.
+          【Support 350 lb & 6'6''in Height】Our rowing mahcines are made of heavy-duty commercial quality steel,which is very sturdy and durable.The 49.2-inch slide length fits almost all users. The ergonomic seat is very comfortable and soft.
+          【Large Monitor and Tablet Holder】The easy-to-read LCD monitor clearly displays your distance,rowing time, count, total count and calories. You can put the phone or Ipad on the holder to enjoy the videos or music."
+        },
+          {
+            img:"https://m.media-amazon.com/images/I/71+n2a6veJL._AC_SL1500_.jpg",
+            img1:"https://m.media-amazon.com/images/I/816jd8zm8EL._AC_SL1500_.jpg",
+            img2:"https://m.media-amazon.com/images/I/816Zti75k9L._AC_SL1500_.jpg",
+            img3:"https://m.media-amazon.com/images/I/71znfJuAoSL._AC_SL1500_.jpg",
+            desc:"Stamina Body Trac Glider 1050 Rowing Machine",
+            price:14014,
+            category:"cardio",
+            description: "Perfect for the fit-focused who have more motivation than workout space, the Stamina BodyTrac Glider is the compact, portable rowing machine that fits into any area and easily stands on end for storing between workouts. The BodyTrac Glider features full-range-of-motion rowing arms to allow a natural rowing movement, optimizing the proven benefits rowing provides the entire body. Because rowing is an incredibly efficient, low-impact aerobic exercise that naturally targets major muscle groups, the 23.5" x 46" BodyTrac Glider lets you strengthen and tighten your back, legs, arms, abdominals and glutes using a single machine.
+
+            Lasting Comfort for Longer Workouts
+            The BodyTrac Glider is designed to maximize your short-term results while also supporting your long-term goals. So you can earn noticeable results now, the glider is built for comfort during longer routines. The ball-bearing roller system and adjustable hydraulic cylinder resistance arms allow smooth, low-impact movements that mimic rowing on the water. And the combination of a padded, molded seat and steel frame with aluminum center beam offers a stable, comfortable workout for years to come.
+            
+            Multi-function Monitor for Motivation
+            To help you remain motivated, Stamina equips the BodyTrac Glider with a multi-function fitness monitor that tracks your current workout time, stroke count and calories burned as well as total strokes accumulated (all time), letting you track your progress toward fitness goals. Select Scan Mode to rotate among the functions, displaying each progress counter for six seconds. As convenient as the monitor is, given that rowing is one of the most efficient exercises for strengthening muscles, increasing metabolism, and burning calories & fat, your favorite progress tracker may just prove to be your own mirror.
+            
+            Do you have limited workout space but plenty of motivation? Turn to the Stamina Body Trac Glider rowing machine, which offers a compact footprint of only 23.5 inches wide by 46 inches long, but offers the same terrific workout performance as machines twice its size. The Body Trac Glider is outfitted with a tough steel frame and an aluminum center beam that's designed to withstand years of use. More significantly, the machine's ball-bearing roller system and adjustable cylinder resistance arms mimic the smooth motion of rowing on the water. And because rowing is widely recognized as one of the best all-around activities for cardiovascular fitness and strength, the Body Trac Glider makes an ideal workout accessory for anyone who wants to get in tip-top shape.
+            
+            
+            
+            The Body Trac Glider folds up for easy storage in a closet. Rowing provides an efficient, effective, low-impact workout that utilizes all the major muscle groups, including the back, legs, arms, abdominals and buttocks. It is also one of the best exercises for building a strong back, as well as one of the most effective low-impact aerobic exercises for increasing your metabolism. As a result, you can efficiently burn calories and fat without impacting your joints. In addition, the rower includes a multifunction fitness monitor that tracks your workout time, stroke count, and calories burned during your workout, along with the total strokes you've accumulated since owing the machine. The monitor displays each data point for six seconds before rotating to the next."
+          },
+          {
+            img:"https://m.media-amazon.com/images/I/71f6o1BCTiL._AC_SL1500_.jpg",
+            img1:"https://m.media-amazon.com/images/I/71sPkkeB0SS._AC_SL1500_.jpg",
+            img2:"https://m.media-amazon.com/images/I/71hamZ-ZPCS._AC_SL1500_.jpg",
+            img3:"https://m.media-amazon.com/images/I/71ZzaspP0yS._AC_SL1500_.jpg",
+            desc:"Exercise Bike, DMASUN Indoor Cycling Bike Stationary, Comfortable Seat Cushion, Multi - grips Handlebar, Heavy Flywheel Upgraded Version (Black)",
+            price:29914,
+            category:"cardio",
+            description: "BEST SPINNING BIKE: Compared with other exercise bikes, it has bigger flywheel weight and higher quality heavy steel(We spend more on the cost of this exercise bike), which shows it will be more stable and secure. DMASUN bike weighs 95 lbs, which is 20 lbs heavier than other bikes. And every sport bike has 138 tests before it leaves the factory. High quality requirements run through the whole production line. What you need is a long-lasting exercise bike, not one that only lasts for a month.
+            PERFECT DESIGN: Well-known design team, innovative design from the perspective of fashion home, sports aesthetics, human engineering, This cycling bike has a fashionable appearance, multiple handles, comfortable touch, adjustable resistance, make this exercise bike meet the needs of beginners to professionals. Not only a fitness product, but also a modern home aesthetic art.
+            HEALTHY CHOICES: The updated DMASUN exercise bike adopts magnet resistance. Compared with wool felt brake pads, there will be no friction and debris during exercise, and reduce the annoyance of frequent replacement of brake pads. We also adjusted the distance between the seat and the handlebar, which is more friendly to people of different heights, and the ergonomic triangular structure makes exercise easier.
+            EXERCISE DATA MONITORING: The Digital Monitor will real-timely track and record your exercise time, speed, distance, calories, and pulse, so that you can know your progress and adjust your exercise plan in time. Hand Pulse Handle with pre-assembled exercise monitor, real-time know that your heart rate changes with the rhythm of exercise."
+          },
+            {
+              img:"https://i5.walmartimages.com/asr/4352a217-9d72-4ae5-a9b4-e2cc066fc2ef_1.d867d19f257572de9573cfae28677666.jpeg",
+              img1:"https://i5.walmartimages.com/asr/43dacb97-4cc6-4dc7-bad9-489b00f4ae1d_1.7b5aa579dfd5c2804789ad0c85f91f7b.jpeg",
+              img2:"https://i5.walmartimages.com/asr/242c5368-3aca-43b2-ae68-d47e1aa30bb5_1.6482acad0f94eb8b8ebfb84a0ee6a9b2.jpeg",
+              img3:"https://i5.walmartimages.com/asr/741a237e-df09-4b81-afda-d09e237e53c4_1.e791199f9250bb24d128728290256759.jpeg",
+              desc:"Ancheer Bluetooth Wifi+12 Running Program 3.0hp Electric Folding Treadmill 8.6MPH&230LB With LCD Display and Manual Incline App control/Heart Rate Sensor",
+              price:49139,
+              category:"cardio",
+              description: "Easy assembly: 95% had been assembled, only need to put screws on.
+              Auto lubrication system.Hi-Fi MP3 Speaker, listen to music when running.
+              Maximum User Weight:230lb,Manual Incline: 2 Manual incline levels (3% and 5%) and twelve pre-set.
+              Blue-Tinted LCD display: Helps you keep track of a number of functions including speed, distance, heart rate, calorie---【Bluetooth APP Control】:Make Your Running Time Smart. G-Fit APP control treadmill will be your personal daily trainer. Gaining control of G-Fit APP along with all of its privileges, you can EASILY detect and optimize your physical health.
+
+              ---【Two-position Incline】: With a maximum speed of 8.6MPH(note:treadmill show KPH)2 manual incline levels (3% and 5%) and twelve pre-set programmes,there are many options for a varied workout. More incline, more calories burn.
+              
+              ---【Low Noise】: Driven by a delicate motor working stably at extreme silence and low power-consumption.Workout upstairs, sleep downstairs.
+              
+              ---【Heavy-duty Construction】: Frame is made of high quality steel,silicone damping design to greatly disperse the shock from running board and effectively protect your ankle and knee joint that gives you excellent experience of running.
+              
+              ---【Warranty】: US STOCK, 230LBs maximum user weight. 2 Years for frame & 1 Years for motor & Friendly Customer Service. (Treadmill passed CE, ROHS,CB,EN957,IEC certifications by SGS.)"
+            },
+            {
+              img:"https://m.media-amazon.com/images/I/71fpYAPvK+L._SL1500_.jpg",
+              img1:"https://m.media-amazon.com/images/I/81D16+xR+YL._SL1500_.jpg",
+              img2:"https://m.media-amazon.com/images/I/816wbiM+zkL._SL1500_.jpg",
+              img3:"https://m.media-amazon.com/images/I/81IPw6jDOsL._SL1500_.jpg",
+              desc:"Aveeno Daily Moisturizing Body Lotion with Soothing Oat and Rich Emollients to Nourish Dry Skin, Gentle & Fragrance-Free Lotion is Non-Greasy & Non-Comedogenic, 18 Fl Oz",
+              price:1174,
+              category:"skin",
+              description: "Aveeno Daily Moisturizing Body Lotion with Soothing Oat and Rich Emollients to Nourish Dry Skin, Gentle & Fragrance-Free Lotion is Non-Greasy & Non-Comedogenic, 18 Fl Oz Aveeno Daily Moisturizing Body Lotion helps improve the health of your dry skin in one day. Formulated with soothing oatmeal and rich emollients, the fragrance-free lotion is clinically shown to help moisturize and relieve dryness. This daily body lotion replenishes moisture for softer and smoother skin. The unique oatmeal formula absorbs quickly, leaving your skin soft, beautiful and healthy-looking. From the dermatologist-recommended brand, this nourishing lotion for dry skin is fragrance-free, non-greasy, non-comedogenic, and gentle enough for daily use as part of a regular skincare and beauty routine.Fluoride free.18-fluid ounce pump bottle of Aveeno Daily Moisturizing Body Lotion to moisturize dry skin for a full 24 hours
+              Nourishing lotion contains a unique soothing oatmeal formula that absorbs quickly, leaving your skin soft, beautiful and healthy-looking
+              Clinically proven and award winning fragrance-free daily lotion for dry skin locks in moisture and improves skin's health in just 1 day
+              Gentle moisturizing lotion works to help prevent, protect, and nourish dry skin. It replenishes moisture for softer and smoother skin
+              Lotion is fragrance-free, non-greasy, non-comedogenic, and gentle enough for daily use as part of a regular beauty and skincare routine From Aveeno, a dermatologist recommended brand for over 65 years"
+            },
+              {
+                img:"https://m.media-amazon.com/images/I/81cquXZsI8L._SL1500_.jpg",
+                img1:"https://m.media-amazon.com/images/I/81moBQVN84L._SL1500_.jpg",
+                img2:"https://m.media-amazon.com/images/I/71lwXniuK8L._SL1500_.jpg",
+                img3:"https://m.media-amazon.com/images/I/81V2BoLM56L._SL1500_.jpg",
+                desc:"OGX Radiant Glow + Argan Oil of Morocco Extra Hydrating Body Lotion for Dry Skin, Nourishing Creamy Body & Hand Cream for Silky Soft Skin, Paraben-Free, Sulfated-Surfactants Free, 19.5 fl oz",
+                price:984,
+                category:"skin",
+                description: "Style:Body Lotion
+                Give skin a soft radiant glow as you moisturize with this argan oil of Morocco hydrating body lotion for dry skin This moisturizing creamy body & hand lotion leaves skin feeling nourished & smooth.Give skin a soft radiant glow as you moisturize with this argan oil of Morocco hydrating body lotion for dry skin. This moisturizing creamy body and hand lotion leaves skin feeling nourished and smooth
+                GET HYDRATED, GLOWING SKIN: The 195-ounce bottle of OGX Radiant Glow, Argan Oil of Morocco Extra Hydrating Body Lotion for dry skin helps hydrate skin, giving it a beautiful radiant glow
+                SOFT, SEDUCTIVE, MOISTURIZED: This moisturizing body cream nourishes to help restore thirsty skin, drenching it with hydration for a soft, radiant glow
+                SKINCARE INSPIRED BY NATURE: The precious radiance-enhancing blend of this creamy hand and body lotion is formulated with water based silk proteins and rich cold-pressed Moroccan argan oil
+                NON-HARSH and NOURISHING: Free from parabens, and sulfated surfactants, the hydrating body lotion is gentle and nourishing on all skin types, but ideal for dry skin For use, massage the ultra hydrating lotion generously all over body day and night"
+              },
+              {
+                img:"https://m.media-amazon.com/images/I/71FWrH69CpL._SL1500_.jpg",
+                img1:"https://m.media-amazon.com/images/I/810iUGDnONL._SL1500_.jpg",
+                img2:"https://m.media-amazon.com/images/I/81qcVMULnZL._SL1500_.jpg",
+                img3:"https://m.media-amazon.com/images/I/81s78Y2QdFL._SL1500_.jpg",
+                desc:"L'Oreal Paris Skincare Collagen Face Moisturizer, Day and Night Cream, Anti-Aging Face, Neck and Chest Cream to smooth skin and reduce wrinkles, 1.7 oz,
+                price:1201,
+                category:"skin",
+                description: "A dose of intense hydration and natural Collagen in Collagen Filler Moisture Day Lotion and Day/Night Cream is essential for younger-looking skin. Rich moisture instantly restores skin's cushion and bounce. Over time, the powerful natural Collagen helps fill in lines and wrinkles, leaving your skin smooth and plump. Use it for a complete collagen-infused skincare regimen. In just 4 weeks 78% of women saw filled in wrinkles*. *Based on a consumer evaluation of 50 women. • Skin-Plumping Collagen • Intense Hydration • Smooths Wrinkles • Dermatologist-tested for gentleness Every night, smooth gently over the entire face after cleansing. For external use only. Avoid contact with eyes. Discontinue use if signs of irritation or rash appear. Keep out of sight of children.Day and night face moisturizer: provides skin with a daily dose of intense hydration that helps to fill in the appearance of lines and wrinkles and helps restore moisture for smoother, plumper skin
+                This lightweight, non-greasy moisturizer delivers hydration and moisture to all skin types, including sensitive skin and absorbs quickly without leaving a sticky film, for smoother, nourished, younger-looking skin
+                Proven results: Overnight, skin is nourished with moisture; In 1 week of using this face moisturizer skin feels smoother and in 4 weeks of use, wrinkles appear more filled in
+                Replenish skin with Collagen: Gift your skin a daily dose of hydration from L'Oreal Paris anti-aging skin care, whether face lotion, night eye creams, or moisturizers with SPF, they provide your skin essential moisture to keep skin healthy
+                Kickstart your routine; First cleanse with Revitalift Derm Intensives 3.5 percent Pure Glycolic Acid Gel Facial Cleanser, treat under eye with Eye Defense Eye Cream and hydrate day and night with Collagen Moisture Filler Moisturizer"
+              },
+                {
+                  img:"https://m.media-amazon.com/images/I/81+-TaapVUL._SL1500_.jpg",
+                  img1:"https://m.media-amazon.com/images/I/61zycRbiB0L._SL1500_.jpg",
+                  img2:"https://m.media-amazon.com/images/I/81uFe1dqMKL._SL1500_.jpg",
+                  img3:"https://m.media-amazon.com/images/I/71fbbHdy0YL._SL1500_.jpg",
+                  desc:"Olay Regenerist Advanced Anti-Aging Pore Scrub Cleanser (5.0 Oz) and Micro-Sculpting Face Moisturizer Cream (1.7 Oz) Skin Care Gift Set",
+                  price:2365,
+                  category:"skin",
+                  description: "Style:Advanced Anti Aging Skin Care
+                  Ready to give as a Valentines gift or to treat yourself to a rejuvenating spa-like treatment at home, this duo pack is invigorated with two anti-aging powerhouses in one set. Our Olay Regenerist Detoxifying Pore Scrub Cleanser and Olay Regenerist Micro-Sculpting Cream help provide visible results for brighter skin and reduced appearance of wrinkles starting on day 1. The anti-aging face cleanser with exfoliants deep cleans and gently exfoliates dead skin cells for spa-like prep for daily skincare. Skin is immediately smooth and refreshed. Micro-sculpting cream completes the treatment with a unique, moisture-binding formula with Amino-Peptide Complex II that instantly plumps and lifts skin cells. The advanced formula delivers anti-aging ingredients 10 layers deep into the skin's surface to correct the look of deep wrinkles and improve skin's texture and elasticity. It's the perfect way to achieve fully hydrated, ageless skin.Detoxify & restore skin with our Face Wash Regenerist Advanced Anti-Aging Duo Pack
+                  All the anti-aging benefits of the Olay Regenerist system in a convenient set with full-size products
+                  Deep clean & detoxify to reveal smooth skin with Olay Regenerist Detoxifying Pore Scrub Cleanser
+                  Take charge with Olay Regenerist Micro-Sculpting Face Moisturizer Cream for visible wrinkle results day 1
+                  Luxurious skincare infused with Hyaluronic Acid, Amino-Peptide Complex II & Niacinamide (Vitamin B3)"
+                },
+                {
+                  img:"https://m.media-amazon.com/images/I/71z09hwuAnS._AC_SL1500_.jpg",
+                  img1:"https://m.media-amazon.com/images/I/61QNhYyH0pL._AC_SL1500_.jpg",
+                  img2:"https://m.media-amazon.com/images/I/81W8QhdHahS._AC_SL1500_.jpg",
+                  img3:"https://m.media-amazon.com/images/I/81nGxM47NjL._AC_SL1500_.jpg",
+                  desc:"Newest Lenovo V15 IIL Business Laptop Computer, 15.6" FHD Display, 10th Gen Quad-Core Intel i5-1035G1, 12GB DDR4 RAM, 256GB PCIe NVMe SSD, WiFi, HD Webcam, HDMI, Windows 10 Pro, GalliumPi Accessories",
+                  price:66258,
+                  category:"laptop",
+                  description: "We sell computers with upgraded configurations. If the computer has modifications (listed above), then the manufacturer box is opened for it to be tested and inspected and to install the upgrades to achieve the specifications as advertised. If no modifications are listed, the item is unopened and untested. Defects & blemishes are significantly reduced by our in-depth inspection & testing.
+
+                  Processor:
+                  10th Generation Intel Core i5-1035G1 Processor (1.0 GHz up to 3.6 GHz, 4 Cores, 8 Threads, 6MB Intel Smart Cache)
+                  
+                  Display:
+                  15.6" Full HD 1920 x 1080 Anti-Glare TN 220 nits Widescreen Display
+                  
+                  Hard Drive:
+                  Upgraded to 256GB PCIe NVMe SSD
+                  
+                  Memory:
+                  Upgraded to 12GB DDR4 SDRAM
+                  
+                  Graphics:
+                  Intel UHD Graphics
+                  
+                  Operating system:
+                  Windows 10 Pro 64-Bit 【10th Generation Intel Core i5-1035G1】High-performance 10th Generation Intel Core i5-1035G1 processor runs from 1.0 GHz up to 3.6 GHz, 4 Cores, 8 Threads, 6MB Intel Smart Cache.
+                  【15.6" FHD Display】15.6" Full HD 1920 x 1080 TN 220nits Anti-Glare Widescreen Display, Intel UHD Graphics. Yield vivid colors and clarity, with narrow side bezels to enhance the view.
+                  【Upgraded to 12GB DDR4 SDRAM ‖ 256GB PCIe NVMe SSD】Substantial high-bandwidth RAM is ready to run powerful programs with efficient multitasking. Fast SSD storage boost productivity. Massive amounts of storage and advanced communication power smoothly run your games and photo/video-editing applications.
+                  【Sleek Visuals】The contemporary design gives the laptop a premium look and feel, with a slim body that travels well when you're not in the office.
+                  【Features and Accessories】2 USB 3.1, 1 USB 2.0, HDMI, WiFi 5, Bluetooth 5, HD Camera, Dual Stereo Speakers, Windows 10 Pro, GalliumPi MousePad."
+                },
+                  {
+                    img:"https://m.media-amazon.com/images/I/7113CFr3y9L._AC_SL1500_.jpg",
+                    img1:"https://m.media-amazon.com/images/I/71zhXAPVI7L._AC_SL1500_.jpg",
+                    img2:"https://m.media-amazon.com/images/I/71AuAdTMd7L._AC_SL1500_.jpg",
+                    img3:"https://m.media-amazon.com/images/I/714s27cTqVL._AC_SL1500_.jpg",
+                    desc:"2021 Newest HP Notebook 15 Laptop, 15.6" Full HD Screen, Intel Celeron N4020 Processor, 8GB RAM, 128GB SSD, 1-Year Microsoft Office 365, HDMI, RJ-45, Type-C, HDMI, Webcam, Windows 10 Home, Black",
+                    price:39364,
+                    category:"laptop",
+                    description: "Capacity:8GB RAM | 128GB SSD
+                    The premium HP laptop, with powerful computing and connectivity features, is built for speed, multitasking and collaboration. Sleek, small, durable, the high performing PC delivers unparalleled results and snappy experience for intensive applications or everyday tasks at work, school or life. Super thin and light for easy portability
+                    
+                    Processor
+                    Intel Celeron N4020 (1.1 GHz base frequency, up to 2.8 GHz burst frequency, 4 MB L2 cache, 2 cores)
+                    
+                    Memory
+                    8GB DDR4 RAM invigorates powerful multitasking and seamless experience
+                    
+                    Hard Drive
+                    128GB SSD (15x faster than HDD, ample storage) delivers instant boot-up, fast data access
+                    
+                    Display & Graphics
+                    15.6" diagonal, FHD (1920 x 1080), IPS, micro-edge, anti-glare, 250 nits, 45% NTSC
+                    
+                    Operating System
+                    Windows 10 Home - perfect for business/education
+                    
+                    Ports
+                    1 x SuperSpeed USB Type-C 5Gbps signaling rate | 2 x SuperSpeed USB Type-A 5Gbps signaling rate- Quick data transfer (Data transfer only)
+                    HDMI - connect to HDTV or monitor
+                    Headphone/Microphone combo jack - true sound quality
+                    1 x multi-format SD media card readerPremium Features
+                    Realtek RTL8821CE 802.11a/b/g/n/ac (1x1) Wi-Fi and Bluetooth 4.2 combo
+                    Webcam: HP True Vision 720p HD camera with integrated dual array digital microphones. Ready for video chat, teleconference, online class"
+                  },
+                  {
+                    img:"https://m.media-amazon.com/images/I/61lOCikvuXL._AC_SL1500_.jpg",
+                    img1:"https://m.media-amazon.com/images/I/61F6h+iYUsL._AC_SL1500_.jpg",
+                    img2:"https://m.media-amazon.com/images/I/61ryOug8uyL._AC_SL1500_.jpg",
+                    img3:"https://m.media-amazon.com/images/I/61j71+1HI3L._AC_SL1500_.jpg",
+                    desc:"2021 Dell Inspiron 15.6" Laptop Intel Pentium N5030,Upto 3.1GHz 16GB RAM&1TB SSD",
+                    price: 33171,
+                    category:"laptop",
+                    description: "Graphic Card:Intel UHD Graphics 600 with shared graphics memory
+
+                    Backlit Keyboard:No
+                    
+                    Media drive: Memory card reader
+                    
+                    Optical Drive: No DVD-RW
+                    
+                    Built-in HD webcam with microphone: YES
+                    
+                    Wireless connectivity:Intel Wi-Fi 6 2x2 (Gig+) and Bluetooth
+                    
+                    Weight(pounds):3.91 pounds
+                    
+                    Battery:3-Cell, 42 WHr, Integrated battery
+                    
+                    Dimension(inches):14.33" x 9.8" x 0.71"
+                    
+                    Color:BlackEquipped with Intel Core i7-9750H Processor, FX505 is able to play the latest games and multitask With ease. FX505 uses high-frequency DDR4 2400MHz RAM to ensure smooth performance. FX505 features one of the fastest Wi-Fi standards available — The latest Intel 802.11AC Wave 2 boasts data transfer rates of up to an incredible 1.7Gbps. To top it all off, it's red-backlit gaming keyboard is rated at 20-million keystroke durability. The actual transfer speed of USB 3.0, 3.1 (Gen 1 and 2), and/or Type-C will vary depending on many factors including the processing speed of the host device, file attributes and other factors related to system configuration and your operating environment. 15.6” IPS level FHD display"
+                  },
+                    {
+                      img:"https://i5.walmartimages.com/asr/85548b28-447a-4f2b-bea8-220f1c2983e2.cefe077451ac73cd77e70e2a96d50db9.jpeg",
+                      img1:"https://i5.walmartimages.com/asr/d08a8e01-47d2-44f3-8fa9-358c34edb04c.7a3cb2258578d1865d2cb9f62dcf9945.png",
+                      img2:"https://i5.walmartimages.com/asr/b7e6316d-9de2-414a-adcf-78a8ac57dbce.4f253ac1e57ae1615f11b5e128886a0f.jpeg",
+                      img3:"https://i5.walmartimages.com/asr/ab822ae5-aec1-4d3c-a89f-e42c67bcae8e.187da81415ca67fafd2043ea45eee8b6.jpeg",
+                      desc:"Gateway 14.1" Ultra Slim Notebook, FHD, Intel® Core™ i3-1115G4, Dual Core, 128GB SSD, 4GB RAM, Tuned by THX™ Audio, Fingerprint Scanner, 1.0MP Webcam, HDMI, Cortana, Windows 10 S, Green",
+                      price:33684,
+                      category:"laptop",
+                      description: "The 14.1” Ultra Slim Notebook from Gateway is the ultimate portable notebook that brings crystal-clear picture for all of your tasks. You’re guaranteed to experience clarity with a 14.1” LCD IPS Display and precision touchpad. The computer is powered by a 11th Gen Intel® Core™ i3-1115G4 Processor and has 4 GB memory RAM.Windows 10 Home (S mode)
+                      11th Gen Intel® Core™ i3-1115G4 Processor (1.2GHz, Up to 4.10 GHz, 6M Cache)
+                      14.1” LCD IPS Display, (1920 x 1080)
+                      Precision Touchpad
+                      Tuned by THX™ Audio
+                      128 GB Solid State Drive
+                      4 GB Memory (RAM)
+                      Built-in Fingerprint Scanner (Windows Hello)
+                      1.0 MP Front-Facing Camera
+                      Up to 8.5 hours of battery life
+                      Micro SD Slot x 1 (Up to 512 GB)
+                      HDMI Output x 1
+                      USB Type-C (Data transfer only) x 1
+                      USB 3.0 x 2
+                      Built-in Stereo Speakers x 2
+                      Bluetooth 5.1
+                      Built-in Microphone
+                      Product Dimensions: 13.1” x 8.9” x 0.8”
+                      Weight:  3.5 lbs.
+                      Free Upgrade to Windows 11 when available "
+                    }
+                    
+ ];
+
+</body>
+</html>
