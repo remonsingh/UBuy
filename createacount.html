@@ -1,0 +1,201 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    
+    <style>
+        .container{
+            width:100%;
+            height:100vh;
+            
+            display:flex;
+        }
+        #left #right{
+            width:50%;
+            
+            margin:10px;
+            height: 90vh;
+        }
+        img{
+            height:80vh;
+            width:70%;
+            margin-left:104px;
+        }
+        #name{
+           
+            width:70%;
+            padding: 20px 15px 10px;
+    font-size: 0.8rem;
+    position: relative;
+    height: 45px;
+    top: 0;
+    border: 1px solid #eeeeee;
+    background: #FCFCFC;
+        }
+        #email{
+            
+            width:70%;
+            padding: 20px 15px 10px;
+    font-size: 0.8rem;
+    position: relative;
+    height: 45px;
+    
+    border: 1px solid #eeeeee;
+    background: #FCFCFC;
+    margin-top:2px;
+
+        }
+        .no1{
+            border: 1px solid #eee !important;
+            height:30px;
+            padding: 19px 15px 10px;
+            font-size: 0.8rem;
+            margin-top:5px;
+            position: relative;
+            box-sizing: border-box;
+            background: #FCFCFC;
+           
+        }
+        
+        #rmobile{
+            border: 1px solid #eeeeee;
+    background: #FCFCFC;
+    width:60%;
+    padding: 20px 15px 10px;
+    font-size: 0.8rem;
+    position: relative;
+    height: 45px;
+    
+    margin-top:5px;
+        }
+        
+       input[type="checkbox"]{
+           opacity:0.2;
+
+       }
+       input[type="checkbox"]:after{
+           border: 2px solid black;
+           background-color:red;
+       }
+       
+#img1{
+    width:45%;
+    height:70px;
+    margin-left: 10px;
+
+}
+#sub{
+    background-color: #FFC107;
+    color:white;
+    width:60%;
+    margin-top:10px;
+    height:35px;
+    border-radius: 5px;
+    border:1px solid white
+}
+.vertical{
+    height:90vh;
+    position: absolute;
+    left:45%;
+    border:1px solid #E0E0E0;
+}
+.inner{
+    display: flex;
+    width:75%;
+}
+      
+ .inner>div{
+     width:45%;
+     font-size: 0.8rem;
+    position: relative;
+    height: 45px;
+    border:1px solid #eeeeee;
+    background: #FCFCFC;
+    margin-top:2px;
+ }  
+ .password{
+    border:1px solid #eeeeee;
+     margin-left: 5px;
+     height: 45px;
+ }    
+
+
+        </style>
+        </head>
+    <body>
+        <div class="container">
+            <div id="left"><img src="https://www.ubuy.co.in/skin/frontend/default/ubuycom-v1/images/create_account_banner.jpg"/></div>
+            <div class="vertical"></div>
+            <div id="right">
+                <h2>Welcome to Ubuy</h2>
+                <form id="myForm"  onsubmit="return signup(event)" >
+                    <input type="text"  id="name" placeholder="Full Name *"  autocomplete="off" required/><br>
+                    <span id="username" style="color:red; font-size:10px"></span><br>
+                    <span class="no1" >+91</span><span><input type="tel" id="rmobile" name="mobile" minlength="10" maxlength="10" pattern="^[6-9]\d{9}$" data-msg-pattern="Please enter valid value."  placeholder="Mobile Number *" autocomplete="off"></span><br>
+                    <span id="mobile" style="color:red; font-size:10px"></span><br>
+                    <input type="email"  id="email" placeholder="Email Address *"  autocomplete="off" required/><br>
+                    <span id="mail" style="color:red; font-size:10px "></span><br>
+                   <div class="inner"> <div><input type="password" class="password" id="pass" placeholder="password *" autocomplete="off" required/><br>
+                    <span id="pass1" style="color:red; font-size:10px"></span><br>
+                </div>
+                <div><input type="password" id="pass1" autocomplete="off" class="password" placeholder="Confirm Password *" required/><br>
+                    <span id="pass2" style="color:red; font-size:10px"></span><br>
+                </div>
+            </div><br>
+                   <p> <input type="checkbox" id="check" ><span style="color:grey"> Join our Mailing List-Get updates on Rollbacks,special pricing, hot new items,<br>&nbsp; &nbsp; &nbsp; gift ideas and more.</p>
+                   <p> <input type="checkbox" id="check" ><span style="color:grey">I have read & agreed <span style="color:#F57F17">Terms & Conditions</span></p>
+                   <span id="check2" style="color:red; font-size:10px"></span><br>
+                   <div class="captcha">
+                   <img src="https://screencasteu.worldsecuresystems.com/Doru/recaptcha-normal-light.png?1" id="img1"/>
+                   </div>
+                   <center><input type="submit" id="sub" value="Create Account"/>
+                   <h5>Already have an account?<span><a href="login.html"  style="color:#F57F17">Login</a></span></h5></center>
+
+                </form>
+            </div>
+        </div>
+    </body>
+    <script>
+    function signup(e) {
+        e.preventDefault();
+        let myForm= document.getElementById("myForm");
+       // console.log("myForm:",myForm)
+    let name = myForm.name.value;
+    let mobile = myForm.rmobile.value;
+    let email = myForm.email.value;
+    let password = myForm.pass.value;
+    let conpass=myForm.pass1.value;
+    
+
+    if(password!=conpass){
+document.getElementById("pass2").innerHTML=" ** passwords are not matching";
+return false;
+
+}
+    
+    if (localStorage.getItem("users") === null){
+          localStorage.setItem("users",JSON.stringify([]));
+      }
+   
+    let user = {
+      name,
+      mobile,
+      email,
+      password,
+    };
+  
+    
+    let arr =JSON.parse(localStorage.getItem("users"))  
+    
+    arr.push(user) ;
+    
+    localStorage.setItem("users",JSON.stringify(arr));
+    
+    window.location.href="login.html"
+    
+        }
+        
+        </script>
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            display: grid;
+            grid-template-columns: 10% 40% 40%;
+        }
+        #firstDiv>div>img{
+            width :60px;
+            margin:20px;
+        }
+        #secondDiv>img{
+            width: 50%;
+        }
+        #secondDiv{
+            text-align: center;
+        }
+     
+
+
+
+        .nav {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+            display: inline-flex;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            color: #151515;
+            padding-left: 15px;
+            padding-right: 15px;
+            height: 20px;
+        }
+         
+        .navbar {
+            background:  #fff;
+            width: 100%;
+            height: 54px;
+            border-bottom: 1px solid rgb(207, 204, 204);
+        }
+
+        .nav li a {
+            text-decoration: none;
+          color: black;
+        }
+        #explore {
+            line-height: 16px;
+            text-align: right;
+        }
+        #follow {
+            font-weight: 500; 
+            font-family: 'Montserrat', sans-serif;
+            margin-right: 1.5rem;
+            margin-top: 3px;
+            margin-left: 600px;
+            align-items: center;
+        }
+        #facebook {
+            color: #4979D9;
+        }
+        #twitter {
+           color: #2AA3EF;
+        }
+        #instagram {
+          color: #5C6CFE;
+        }
+        #youtube {
+          color: #DF1A26;
+          
+        }
+        .icon {
+         margin-top: 3px;
+         margin-left: 20px;
+         align-items: center;
+       }
+       #account {
+           border-radius: 5px;
+           padding: .5rem 1rem;
+           font-size: 13px;
+           
+         }
+        
+       #india {
+        padding: .5rem 1rem;
+        margin-left: 50px;
+       }
+       .navbar .nav li:hover {
+           background: transparent;
+           color: black;
+           
+       }
+       .sub-menu {
+           display: none;
+         box-shadow: 1px 1px 1px 1px grey; 
+       }
+       .sub-menu ul {
+           list-style-type: none;
+       }
+       .navbar .nav li:hover .sub-menu {
+           display: block;
+           position: absolute;
+           background: #fff;
+           margin-top: 6px;
+           margin-left: 0px;
+       }
+
+       .navbar .nav li:hover .sub-menu ul {
+         display: block;
+         margin: 0px;
+       }
+
+       .navbar .nav li:hover .sub-menu ul li {
+         width: 220px;
+         padding: 4px;
+         padding-left: -4px;
+         background: transparent;
+         border-radius: 0;
+         text-align: left;
+         border-bottom: 1px solid rgb(207, 204, 204);
+       }
+       .navbar .nav li:hover .sub-menu ul li:hover {
+           background: #ffc107;
+       }
+       /* #welcome {
+        border-bottom: 1px solid rgb(207, 204, 204);
+        
+       } */
+       sup {
+           border-radius: 60%;
+           background: red;
+           color: white;
+           padding: 0 4px;
+       }
+       .fa-chevron-right {
+        float: right;
+         color: rgb(133, 131, 131);
+         font-weight: 100;
+       }
+       .sub-menu1 {
+          display: none;
+          box-shadow: 1px 1px 1px 1px grey; 
+          padding-left: 0px;
+       }
+       .hover-me:hover .sub-menu1 {
+           position: absolute;
+           display: block;
+           margin-top: -30px;
+           margin-left: 225px;
+           background: #fff;
+       }
+  
+    </style>
+</head>
+<body>
+    <div class="navbar">
+  
+        <ul class="nav">
+    
+            <li><a href="main.html" id="explore">Explore</a>
+              <div class="sub-menu">
+              <ul>
+                <li class="hover-me"><a href="#"><i class="fas fa-tshirt"></i>&nbsp;&nbsp;Fashion & Jewellery<i class="fas fa-chevron-right"></i></a>
+                 <div class="sub-menu1">
+                     <ul>
+                        <li><a href="#">Clothing</a></li>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">Eyewear</a></li>
+                        <li><a href="#">Watches</a></li>
+                        <li><a href="#">Bags & Accessories</a></li>
+                        <li><a href="#">Jewellery</a></li>
+                     </ul>
+                 </div>
+                </li>
+                <li class="hover-me"><a href="#"><i class="fas fa-plug"></i>&nbsp;&nbsp;Electronics<i class="fas fa-chevron-right"></i></a>
+                    <div class="sub-menu1">
+                        <ul>
+                            <li><a href="#">Small Appliances</a></li>
+                            <li><a href="#">Video Games</a></li>
+                            <li><a href="#">Televisions</a></li>
+                            <li><a href="#">Cameras</a></li>
+                            <li><a href="#">Laptops</a></li>
+                            <li><a href="#">Speakers</a></li>
+                        </ul>
+                    </div>
+                   </li>
+                <li class="hover-me"><a href="#"><i class="fas fa-mobile"></i>&nbsp;&nbsp;Cell Phones & Accessories<i class="fas fa-chevron-right"></i></a>
+                    <div class="sub-menu1">
+                        <ul>
+                          <li><a href="#"></a>Accessories</a></li>
+                          <li><a href="#"></a>Computer Tablets</a></li>
+                          <li><a href="#"></a>Mobiles</a></li>
+        
+                        </ul>
+                    </div>
+                   </li>
+                <li class="hover-me"><a href="#"><i class="fas fa-baby-carriage"></i>&nbsp;&nbsp;Baby & Toddler<i class="fas fa-chevron-right"></i></a>
+                    <div class="sub-menu1">
+                        <ul>
+                             <li><a href="#">Baby Accessories</a></li>
+                             <li><a href="#">Toys & Games</a></li>
+                             <li><a href="#">Sports & Outdoor Play</a></li>
+                             <li><a href="#">Feeding</a></li>
+                             <li><a href="#">Clothes</a></li>
+                             <li><a href="#">Shoes</a></li>
+                        </ul>
+                    </div>
+                   </li>
+                <li class="hover-me"><a href="#"><i class="fas fa-chair"></i>&nbsp;&nbsp;Home Goods<i class="fas fa-chevron-right"></i></a>
+                    <div class="sub-menu1">
+                        <ul>
+                             <li><a href="#">Furniture</a></li>
+                             <li><a href="#">Kitchen & Dining</a></li>
+                             <li><a href="#">Bed</a></li>
+                             <li><a href="#">Decor</a></li>
+                             <li><a href="#">Bathroom Fixtures</a></li>
+                           
+                        </ul>
+                    </div>
+                </li>
+                <li class="hover-me"><a href="#"><i class="fas fa-prescription-bottle"></i>&nbsp;&nbsp;Perfumes & Fragrances<i class="fas fa-chevron-right"></i></a>
+                    <div class="sub-menu1">
+                        <ul>
+                             <li><a href="#">Women's</a></li>
+                             <li><a href="#">Men's</a></li>
+                            
+                        </ul>
+                    </div>
+                   </li>
+                <li class="hover-me"><a href="#"><i class="fas fa-hammer"></i>&nbsp;&nbsp;Tools & Home Improvements<i class="fas fa-chevron-right"></i></a>
+                    <div class="sub-menu1">
+                        <ul>
+                             <li><a href="#">Tool Sets</a></li>
+                             <li><a href="#">Gardening Hand Tools</a></li>
+                             <li><a href="#">Wall Lights</a></li>
+                             <li><a href="#">Gardening & Lawn Care</a></li>
+                             <li><a href="#">Flood & Security Lights</a></li>
+                         
+                        </ul>
+                    </div>
+                </li>
+                <li class="hover-me"><a href="#"><i class="fas fa-laptop"></i>&nbsp;&nbsp;Office Products<i class="fas fa-chevron-right"></i></a>
+                <div class="sub-menu1">
+                    <ul>
+                          <li><a href="#">Office Electronics</a></li>
+                          <li><a href="#">Office Supplies</a></li>
+                          <li><a href="#">Shipping Supplies</a></li>
+                          <li><a href="#">Paper</a></li>
+                          <li><a href="#">Inkjet Printer Paper</a></li>
+                         
+                    </ul>
+                </div>
+               </li>
+                <li class="hover-me"><a href="#"><i class="fas fa-mortar-pestle"></i>&nbsp;&nbsp;Beauty & personal care<i class="fas fa-chevron-right"></i></a>
+                <div class="sub-menu1">
+                    <ul>
+                          <li><a href="#">Hair Care</a></li>
+                          <li><a href="#">Personal Care</a></li>
+                          <li><a href="#">Skin Care</a></li>
+                          <li><a href="#">Tools & Accessories</a></li>
+                          
+                    </ul>
+                </div>
+               </li>
+                <li class="hover-me"><a href="#"><i class="fas fa-running"></i>&nbsp;&nbsp;Sports and Tools<i class="fas fa-chevron-right"></i></a>
+                    <div class="sub-menu1">
+                        <ul>
+                             <li><a href="#">Strength & Weights</a></li>
+                             <li><a href="#">Cardio Training</a></li></a>
+                             <li><a href="#">Outdoor</a></li>
+                             <li><a href="#">Camping</a></li>
+                             <li><a href="#">Team Sports</a></li>
+                             <li><a href="#">Leisure Sports</a></li>
+                        </ul>
+                    </div>
+                   </li>
+                <li class="hover-me"><a href="#"><i class="fas fa-suitcase"></i>&nbsp;&nbsp;Luggage and Travel Gear<i class="fas fa-chevron-right"></i></a>
+                    <div class="sub-menu1">
+                        <ul>
+                             <li><a href="#">Trolley Suitcases & Bags</a></li>
+                             <li><a href="#">Packing & Bags Accessories</a></li>
+                             
+                        </ul>
+                    </div>
+                   </li>
+                <li class="hover-me"><a href="#"><i class="fas fa-book"></i>&nbsp;&nbsp;Books<i class="fas fa-chevron-right"></i></a>
+                    <div class="sub-menu1">
+                    <ul>
+                          <li><a href="#">Arts & Photography</a></li>
+                          <li><a href="#">Calendars</a></li>
+                          <li><a href="#">Children's Books</a></li>
+                          <li><a href="#">Christian Books & Bibles</a></li></a>
+                          <li><a href="#">Comics & Graphic Novels</a></li>
+                          <li><a href="#">Technological</a></li>
+                    </ul>
+                </div>
+               </li>
+                <li class="hover-me"><a href="#"><i class="fas fa-car"></i>&nbsp;&nbsp;Automotive<i class="fas fa-chevron-right"></i></a>
+                    <div class="sub-menu1">
+                        <ul>
+                             <li><a href="#">Car Care & Protection</a></li>
+                             <li><a href="#">GPS Devices</a></li>
+                             <li><a href="#">Tires & Wheels</a></li>
+                             <li><a href="#">Interior & Accessories</a></li>
+                            
+                        </ul>
+                    </div>
+                   </li>
+                <li class="hover-me"><a href="#"><i class="fas fa-guitar"></i>&nbsp;&nbsp;Musical Instruments<i class="fas fa-chevron-right"></i></a>
+                    <div class="sub-menu1">
+                    <ul>
+                          <li><a href="#">Guitars</a></li>
+                          <li><a href="#">Keyboards & MIDI</a></li>
+                          <li><a href="#">Drums & Percussion</a></li>
+                          <li><a href="#">Amplifier & Effects</a></li>
+                          <li><a href="#">DJ & Karaoke</a></li>
+                          
+                    </ul>
+                </div>
+               </li>
+                <li class="hover-me"><a href="#"><i class="fas fa-cat"></i>&nbsp;&nbsp;Pet Supplies<i class="fas fa-chevron-right"></i></a>
+                    <div class="sub-menu1">
+                  
+                    <ul>
+                          <li><a href="#">Dogs</a></li>
+                          <li><a href="#">Fish & Aquatic Pets</a></li>
+                          <li><a href="#">Cats</a></li>
+                          <li><a href="#">Birds</a></li>
+                          <li><a href="#">Reptiles & Amphibians</a></li>
+                          <li><a href="#">Small Animals</a></li>
+                    </ul>
+                </div>
+               </li>
+              </ul>
+              </div>
+            </li>
+    
+              <li><span id="follow">Follow us</span></li>
+        
+              <li class="icon"><a href="https://www.facebook.com/Ubuyindia"><i class="fab fa-facebook-f" id="facebook"></i></a></li>
+              <li class="icon"><a href="https://twitter.com/UbuyIndia"><i class="fab fa-twitter" id="twitter"></i></a></li>
+              <li class="icon"><a href="https://www.instagram.com/ubuyindia/"><i class="fab fa-instagram" id="instagram"></i></a></li>
+              <li class="icon"><a href="https://www.youtube.com/channel/UCH5j7gR9-f1P6RvbzOV-Zzw"><i class="fab fa-youtube" id="youtube"></i></a></li>
+                
+        <li id="account"><a href="#"><img src="https://d3ulwu8fab47va.cloudfront.net/skin/frontend/default/ubuycom-v1/images/user.png" alt="Account">
+                <span id="account-text">Account</span></a>  
+           <div class="sub-menu">
+            <ul>
+              <li><span id="welcome"><b>Welcome</b></span></li>
+    
+               <li><a class="dropdown-item" href="login.html"><img src="https://d3ulwu8fab47va.cloudfront.net/skin/frontend/default/ubuycom-v1/images/sign-in.svg" alt="Ubuy Sign in" longdesc="https://www.ubuy.co.in/customer/account/login">Sign in</a></li>
+              <li><a class="dropdown-item" href="createacount.html"><img src="https://d3ulwu8fab47va.cloudfront.net/skin/frontend/default/ubuycom-v1/images/create-account.svg" alt="Ubuy Create an Account" longdesc="https://www.ubuy.co.in/customer/account/create">Create an Account</a></li>
+              <li><a class="dropdown-item" href="ubuywishlist.html"><img src="https://d3ulwu8fab47va.cloudfront.net/skin/frontend/default/ubuycom-v1/images/wishlist.svg" alt="Ubuy Wishlist" longdesc="https://www.ubuy.co.in/ubuywishlist">Your Wishlist</a></li>
+            </ul>
+          </div>
+        </li>
+              <li id="india"><a href="#" ><img height="20" width="30" alt="India" src="https://d3ulwu8fab47va.cloudfront.net/skin/frontend/default/ubuy/images/india_flag.png.webp?v=1.0">
+                India</a>   </li>
+    
+              <li id="cart"><a href="cart.html"><img height="25" width="25" src="https://d3ulwu8fab47va.cloudfront.net/skin/frontend/default/ubuycom-v1/images/cart-nav.svg" alt="Cart Items" longdesc="https://www.ubuy.co.in/ubcheckout/cart">
+                <sup id="number"></sup></a> </li>
+        
+        
+        </ul>
+      </div>
+   
+   <div id="main"></div>
+   <div id="des"></div>
+</body>
+<script>
+
+    var store=JSON.parse(localStorage.getItem("ubuyitem"));
+    
+
+    var div=document.createElement("div");
+    div.id="firstDiv";
+    var childdiv=document.createElement("div");
+    var img=document.createElement("img");
+    img.src=store.img3;
+    childdiv.append(img);
+    var childdiv1=document.createElement("div");
+    var img1=document.createElement("img");
+    img1.src=store.img1;
+    childdiv1.append(img1);
+    var childdiv2=document.createElement("div");
+    var img2=document.createElement("img");
+    img2.src=store.img2;
+    childdiv2.append(img2);
+    div.append(childdiv,childdiv1,childdiv2);
+
+    var div1=document.createElement("div");
+
+    div1.id="secondDiv";
+    var div1img=document.createElement("img");
+    div1img.src=store.img1;
+    div1.append(div1img);
+
+    var div2=document.createElement("div");
+    div2.id="thirdDiv";
+    var heading=document.createElement("h2");
+    heading.textContent=store.desc;
+    var label1=document.createElement("span");
+    label1.textContent="INR "
+    var price=document.createElement("span");
+    
+    price.textContent=store.price;
+    price.style.fontWeight= "bold";
+    var get=document.createElement("p");
+    get.textContent="Order now and get it around Thursday, October 07";
+    get.style.color="green";
+    var vail=document.createElement("p");
+    vail.textContent="Availability : In stock"
+    var label=document.createElement("label");
+    label.textContent="Qty."
+    var select=document.createElement("input");
+    select.type="number";
+    var span=document.createElement("span");
+    var button=document.createElement("button");
+    button.textContent="Add to Cart";
+    button.onclick=function (){
+        addtocart(store)
+        };
+    span.append(button);
+    div2.append(heading,label1,price,get,vail,label,select,button);
+    
+
+
+    var main=document.getElementById("main");
+    main.append(div,div1,div2);
+    var descr=document.createElement("h3");
+    descr.textContent="Product Description";
+    var anotherDiv=document.getElementById("des")
+    anotherDiv.append(descr);
+    var paraDes=document.createElement("p");
+    paraDes.textContent=store.description;
+    anotherDiv.append(paraDes);
+
+ function addtocart(s){
+    s.qty=select.value;
+    //console.log(s)
+    if(localStorage.getItem("ubuyCart")===null){
+  localStorage.setItem("ubuyCart",JSON.stringify([]));
+}
+var ubuyStorage=JSON.parse(localStorage.getItem("ubuyCart"));
+        ubuyStorage.push(s);
+    localStorage.setItem("ubuyCart",JSON.stringify(ubuyStorage));
+    console.log(ubuyStorage)
+ }
+
+ var cart=JSON.parse(localStorage.getItem("ubuyCart"));
+var sup=document.getElementById("number");
+        sup.textContent=cart.length;
+</script>
+</html>
