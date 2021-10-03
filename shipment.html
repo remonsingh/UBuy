@@ -219,7 +219,7 @@
                 <div class="b1"><span style="font-size: 15px;">Customs/import Duties,Taxes & VAT</span><span class="right" style="float:right; font-size: 15px; color:red">Not Included</span></div>
                 <div class="b1"><span style="font-size: 15px;">Grand Total</span><span id="grand" class="right" style="float:right; font-size: 15px;">INR111,474.00</span></div>
                 
-                <div class="b2"><button style="background-color:#ffc107 ; border:1px solid white;color:white; border-radius: 5px; ">PROCEED TO PAY</button></div>
+                <div class="b2"><button onclick="message()" style="background-color:#ffc107 ; border:1px solid white;color:white; border-radius: 5px; ">PROCEED TO PAY</button></div>
                 <div class="b3"><span  style="font-size: 11px;">Disclaimer-Since your order will arrive from the USA, a formal customs clearance procedure will<br>
                 be there. In rare cases(depending upon products nature),you may need to provide documents<br> to customs authority if they request, to clear the shipment from customs. In case, if you need any<br>help during the clearance process, you may reach to our 24/7 customer service  </span></div>
             </div>
@@ -235,6 +235,9 @@
         grand.textContent=Number(bill[0])+(Number(bill[0])*0.05);
         function cart(){
             location.href="cart.html";
+        }
+                function message(){
+            alert("Congratulations! Order placed successfully." );
         }
     </script>
 </html>
